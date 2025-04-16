@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "mypkg"
+name = "change-me"
 version = "0.1.0"
 description = "A simple Python template"
 authors = ["Tsmorz <tonysmoragiewicz@gmail.com>"]
@@ -69,7 +69,7 @@ fix = true
 
 # Sort imports automatically
 [tool.lint.isort]
-known-first-party = ["mypkg"]  # Replace with your project name
+known-first-party = ["change-me"]  # Replace with your project name
 combine-as-imports = true
 
 # Enforce docstring styles
@@ -83,4 +83,4 @@ indent-style = "space"  # Use spaces instead of tabs
 line-ending = "lf"      # Use LF for line endings (Unix standard)
 
 [tool.poetry.urls]
-homepage = "https://github.com/Tsmorz/mypkg"
+homepage = "https://github.com/Tsmorz/template-python"
