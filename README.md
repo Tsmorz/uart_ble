@@ -15,14 +15,11 @@ To install the library run: `pip install uart-ble`
 
 ## Usage
 ```
-"""Basic docstring for my module."""
+import asyncio
 
-from loguru import logger
-
-def main() -> None:
-    """Run a simple demonstration."""
-logger.info("Hello World!")
+from uart_ble.ble_utils import stream_uart_ble
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(stream_uart_ble(microcontroller_name="CIRCUITPY"))
+
 ```
