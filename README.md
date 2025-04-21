@@ -1,8 +1,8 @@
-# template-python
-Simple README.md for a Python project template.
+# UART-Bluetooth Low Energy
+Stream UART BLE data from a microcontroller
 
 ## Install
-To install the library run: `pip install change-me`
+To install the library run: `pip install uart-ble`
 
 ## Development
 0. Install [Poetry](https://python-poetry.org/docs/#installing-with-the-official-installer)

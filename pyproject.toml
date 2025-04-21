@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "change-me"
+name = "uart-ble"
 version = "0.1.0"
-description = "A simple Python template"
+description = "Stream UART BLE data from a microcontroller"
 authors = ["Tsmorz <tonysmoragiewicz@gmail.com>"]
 readme = "README.md"
 package-mode = true
@@ -85,4 +85,4 @@ indent-style = "space"  # Use spaces instead of tabs
 line-ending = "lf"      # Use LF for line endings (Unix standard)
 
 [tool.poetry.urls]
-homepage = "https://github.com/Tsmorz/template-python"
+homepage = "https://github.com/Tsmorz/uart_ble"
