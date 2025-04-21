@@ -17,7 +17,7 @@ To install the library run: `pip install uart-ble`
 ```
 import asyncio
 
-from uart_ble.ble_utils import stream_uart_ble
+from uart_ble import stream_uart_ble
 
 if __name__ == "__main__":
     asyncio.run(stream_uart_ble(microcontroller_name="CIRCUITPY"))
