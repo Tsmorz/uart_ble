@@ -1,13 +1,5 @@
 """Sample doc string."""
 
-# FeatherS3 Helper Library
-# 2022 Seon Rozenblum, Unexpected Maker
-#
-# Project home:
-#   https://feathers3.io
-#
-
-# Import required libraries
 import board
 from analogio import AnalogIn
 from digitalio import DigitalInOut, Direction
@@ -29,8 +21,6 @@ vbus_sense.direction = Direction.INPUT
 
 
 # Helper functions
-
-
 def led_blink():
     """Set the internal LED IO13 to its inverse state."""
     led13.value = not led13.value
