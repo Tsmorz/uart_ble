@@ -7,7 +7,7 @@ readme = "README.md"
 package-mode = true
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = ">=3.10,<3.14"
 numpy = "^2.2.3"
 pytest = "^8.3.5"
 pytest-cov = "^6.0.0"
@@ -15,6 +15,8 @@ loguru = "^0.7.3"
 pre-commit = "^4.1.0"
 scipy = "^1.15.2"
 tqdm = "^4.67.1"
+adafruit-circuitpython-ble = "^10.0.12"
+pyserial = "^3.5"
 
 
 [build-system]
