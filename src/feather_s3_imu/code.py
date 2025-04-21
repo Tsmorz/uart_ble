@@ -1,21 +1,26 @@
-import board
-import time
-import digitalio
-import busio
+"""Sample doc string."""
 
+import time
+
+import board
 from adafruit_ble import BLERadio
-from adafruit_ble.services.nordic import UARTService
 from adafruit_ble.advertising.standard import ProvideServicesAdvertisement
-from adafruit_lsm6ds.lsm6dsox import LSM6DSOX as LSM6DS
+from adafruit_ble.services.nordic import UARTService
 from adafruit_lis3mdl import LIS3MDL
+from adafruit_lsm6ds.lsm6dsox import LSM6DSOX as LSM6DS
 
 DECIMALS = 3
 LOOP_DELAY = 0.01
 ENCODING = "utf-8"
 
+# ruff: noqa: T201
+
+
 def get_sensor_str(sensor: tuple) -> str:
+    """Get a string representation of a sensor tuple."""
     msg = f"{sensor[0]:2.{DECIMALS}f},{sensor[1]:2.{DECIMALS}f},{sensor[2]:2.{DECIMALS}f},"
     return msg
+
 
 # initialize the i2c bus
 i2c = board.I2C2()
@@ -57,5 +62,3 @@ while True:
         ble.start_advertising(advertisement)
         time.sleep(1.0)
     time.sleep(0.1)
-
-

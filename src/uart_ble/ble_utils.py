@@ -7,8 +7,6 @@ from loguru import logger
 
 from uart_ble.definitions import BLE_TIMEOUT, TX_CHAR_UUID
 
-BUFFER = b""
-
 
 async def find_device(target_name: str):
     """Find the BLE device with the given name."""
@@ -20,7 +18,7 @@ async def find_device(target_name: str):
 def list_devices(devices) -> None:
     """List the found BLE devices."""
     if not devices:
-        logger.error("❌ No BLE devices found.")
+        logger.error("No BLE devices found.")
         return
 
     for device in devices:

@@ -26,6 +26,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.ruff]
 # Set the maximum allowed line length (PEP 8 default is 88)
 line-length = 88
+exclude = ["tests", "src/feather_s3_imu/lib/*"]
 
 # Enable specific linting rules
 lint.select = [
