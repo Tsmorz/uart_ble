@@ -10,7 +10,7 @@ To install the library run: `pip install uart-ble`
 2. `make format` to format the code and check for errors
 3. `make test` to run the test suite
 4. `make clean` to delete the temporary files and directories
-5. `poetry publish --build` to build and publish to https://pypi.org/project/change-me
+5. `poetry publish --build` to build and publish to https://pypi.org/project/uart-ble
 
 
 ## Usage

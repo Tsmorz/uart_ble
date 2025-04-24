@@ -10,8 +10,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--microcontroller",
         "-m",
-        required=True,
         choices=["ARDUINO", "CIRCUITPY"],
+        default="CIRCUITPY",
         help="Microcontroller to read data from",
     )
 
