@@ -75,7 +75,7 @@ exclude = ["src/feather_s3_imu/*"]
 
 # Sort imports automatically
 [tool.lint.isort]
-known-first-party = ["change-me"]  # Replace with your project name
+known-first-party = ["uart-ble"]  # Replace with your project name
 combine-as-imports = true
 
 # Enforce docstring styles
