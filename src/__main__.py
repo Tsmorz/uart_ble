@@ -3,7 +3,7 @@
 import argparse
 import asyncio
 
-from uart_ble import stream_uart_ble
+from uart_ble import stream_from_ble_device
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Read sensor data over BLE.")
@@ -16,4 +16,6 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    asyncio.run(stream_uart_ble(microcontroller_name=args.microcontroller))
+
+    """Stream data from the BLE device."""
+    asyncio.run(stream_from_ble_device(device_name=args.microcontroller))
